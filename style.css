@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0%;
+    padding: 0%;
+}
+.container {
+    background-color: #663399;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.pw-generate {
+    width: 350px;
+    background-color: #441174;
+}
+.password {
+    margin: 1rem 14px;
+    background-color: #663399;
+    padding: 14px;
+    position: relative;
+    overflow: auto;
+}
+.password span {
+    font-size: 22px;
+}
+.password button {
+    color: #441174;
+    background-color: white;
+    border: none;
+    padding: 4px;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    transform: translate(0,30%);
+    transition: opacity 0,2s ease,transform 0.2s ease;
+    cursor: pointer;
+    opacity: 0;
+}
+.password:hover button {
+    transform: translate(0,0);
+    opacity: 1;
+}
+.pw-body {
+    padding: 20px 14px;
+}
+.form-control {
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+.pw-body button {
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    background-color: #ECB602;
+    color: #441174;
+    padding: 10px;
+    width: 100%;
+    margin-top: 10px;
+}

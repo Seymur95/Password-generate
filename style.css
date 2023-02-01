@@ -4,6 +4,7 @@
     margin: 0%;
     padding: 0%;
 }
+
 .container {
     background-color: #663399;
     min-height: 100vh;
@@ -12,45 +13,65 @@
     justify-content: center;
     color: white;
 }
+
 .pw-generate {
     width: 350px;
     background-color: #441174;
 }
+
 .password {
     margin: 1rem 14px;
     background-color: #663399;
     padding: 14px;
     position: relative;
-    overflow: auto;
+    overflow: hidden;
+    height: 50px;
+    display: flex;
+    align-items: center;
 }
-.password span {
+
+.password input {
     font-size: 22px;
+    background-color: #663399;
+    border: none;
+    color: aliceblue;
+    outline: none;
+    width: 100%;
 }
+
 .password button {
     color: #441174;
     background-color: white;
     border: none;
-    padding: 4px;
+    padding: 2px 4px;
     position: absolute;
     top: 0%;
     right: 0%;
-    transform: translate(0,30%);
-    transition: opacity 0,2s ease,transform 0.2s ease;
+    transform: translate(0, 30%);
+    transition: opacity 0, 2s ease, transform 0.2s ease;
     cursor: pointer;
     opacity: 0;
 }
+
 .password:hover button {
-    transform: translate(0,0);
     opacity: 1;
+    transform: translate(0, 0);
 }
+
+.password button:hover {
+    opacity: 0.9;
+}
+
 .pw-body {
     padding: 20px 14px;
 }
+
 .form-control {
     margin-bottom: 1rem;
     display: flex;
     justify-content: space-between;
 }
+
 .pw-body button {
     font-size: 20px;
     font-weight: bold;
@@ -60,4 +81,9 @@
     padding: 10px;
     width: 100%;
     margin-top: 10px;
+    cursor: pointer;
+}
+
+.pw-body button:hover {
+    opacity: .9;
 }
